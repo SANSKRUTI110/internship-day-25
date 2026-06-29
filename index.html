@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>School Management System</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+header{
+    background:#0d47a1;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+nav{
+    background:#1565c0;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:15px 25px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    background:#0d47a1;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1500&q=80");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:20px;
+}
+
+.btn{
+    margin-top:25px;
+    padding:12px 30px;
+    background:#ff9800;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+}
+
+.cards{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    margin:40px 0;
+}
+
+.card{
+    width:23%;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,.2);
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.card h2{
+    color:#1565c0;
+}
+
+.card p{
+    margin-top:10px;
+    color:#555;
+}
+
+.section-title{
+    text-align:center;
+    margin:30px;
+    color:#0d47a1;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    margin-bottom:40px;
+}
+
+table th{
+    background:#1565c0;
+    color:white;
+    padding:15px;
+}
+
+table td{
+    padding:15px;
+    text-align:center;
+    border:1px solid #ddd;
+}
+
+.notice{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,.2);
+    margin-bottom:40px;
+}
+
+.notice ul{
+    margin-top:20px;
+    padding-left:20px;
+}
+
+footer{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>ABC School Management System</h1>
+<p>Welcome to Our Smart School</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Students</a>
+<a href="#">Teachers</a>
+<a href="#">Attendance</a>
+<a href="#">Results</a>
+<a href="#">Library</a>
+<a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+<h1>Welcome to ABC School</h1>
+<p>Quality Education for Bright Future</p>
+<button class="btn">Explore More</button>
+</section>
+
+<div class="container">
+
+<h2 class="section-title">Dashboard</h2>
+
+<div class="cards">
+
+<div class="card">
+<h2>1200</h2>
+<p>Total Students</p>
+</div>
+
+<div class="card">
+<h2>75</h2>
+<p>Teachers</p>
+</div>
+
+<div class="card">
+<h2>98%</h2>
+<p>Attendance</p>
+</div>
+
+<div class="card">
+<h2>30</h2>
+<p>Classrooms</p>
+</div>
+
+</div>
+
+<h2 class="section-title">Student Information</h2>
+
+<table>
+
+<tr>
+<th>Roll No</th>
+<th>Name</th>
+<th>Class</th>
+<th>Attendance</th>
+<th>Grade</th>
+</tr>
+
+<tr>
+<td>101</td>
+<td>Rahul Sharma</td>
+<td>10th</td>
+<td>96%</td>
+<td>A</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>Priya Patel</td>
+<td>10th</td>
+<td>93%</td>
+<td>A+</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td>Aman Verma</td>
+<td>9th</td>
+<td>91%</td>
+<td>B+</td>
+</tr>
+
+<tr>
+<td>104</td>
+<td>Neha Singh</td>
+<td>8th</td>
+<td>97%</td>
+<td>A+</td>
+</tr>
+
+</table>
+
+<h2 class="section-title">Latest Notices</h2>
+
+<div class="notice">
+
+<ul>
+<li>📢 Annual Sports Day on 15th August</li>
+<li>📚 Unit Test starts from 5th July</li>
+<li>🎉 Science Exhibition next week</li>
+<li>🏆 Scholarship forms available in office</li>
+<li>🚌 School picnic registration open</li>
+</ul>
+
+</div>
+
+</div>
+
+<footer>
+
+<h3>ABC School Management System</h3>
+
+<p>📍 Pune, Maharashtra</p>
+
+<p>📞 +91 9876543210</p>
+
+<p>📧 abcschool@gmail.com</p>
+
+<p>© 2026 All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>
